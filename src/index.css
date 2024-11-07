@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  scroll-snap-type: y mandatory;
+}
+
+#Home, #Product {
+  scroll-snap-align: start;
+}
+
+
+
+.link-underline {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+		background-size: 0 3px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size .3s ease-in-out;
+	}
+
+	.link-underline-white {
+		background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
+	}
+
+	.link-underline:hover {
+		background-size: 100% 3px;
+		background-position: 0 100%
+  }
+  
+.link-underline1 {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#e61010, #e61010);
+		background-size: 0 3px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size .3s ease-in-out;
+	}
+
+	.link-underline-red {
+		background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(250, 7, 7), rgb(250, 7, 7))
+	}
+
+	.link-underline1:hover {
+		background-size: 100% 3px;
+		background-position: 0 100%
+	}
+
+	.text-container {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200%;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    animation: colorSlide 3s linear infinite;
+  }
+
+  /* Animasi warna */
+  @keyframes colorSlide {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
