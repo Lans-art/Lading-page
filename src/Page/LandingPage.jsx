@@ -9,7 +9,7 @@ import { MdEmail } from "react-icons/md";
 import gambar from "../img/wallpaper.jpg";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import ContentSlider from "../Commponents/ContentSlider";
-import Produk from "../img/Produk.mp4";
+import stnk from "../img/stnk.mp4";
 
 function LandingPage() {
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ function LandingPage() {
             <div className="flex flex-col md:flex-row items-center w-11/12 md:w-3/4 mx-auto p-5 rounded-lg ">
               <iframe
                 class="w-full aspect-video rounded-xl border-2 border-b-red-500 shadow-xl shadow-red-500/50"
-                src={Produk}
+                src={stnk}
               ></iframe>
             </div>
           </div>
