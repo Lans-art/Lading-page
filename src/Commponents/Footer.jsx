@@ -3,12 +3,12 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <footer className="w-full bg-slate-800 text-white py-8">
-        <div className="w-full sm:w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-6">
+      <footer className="w-full bg-slate-800 text-white py-6 ">
+        <div className="w-full sm:w-11/12 md:w-4/5 mx-auto flex gap-2 flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-6 place-items-center p-4 md:p-0">
           {/* About Us Section */}
           <div className="text-center md:text-left">
             <h2 className="text-lg font-semibold">About Us</h2>
-            <p className="text-base mt-2 max-w-md">
+            <p className="text-sm mt-2 max-w-md md:mx-0 text-justify">
               KONCI.ID merupakan perusahaan yang bergerak di bidang Perguruan
               Tinggi (PT) dan memfokuskan diri pada Akreditasi PT, Pendirian PT,
               Penambahan Program Studi, dll.
@@ -18,14 +18,14 @@ function Footer() {
           {/* Our Services Section */}
           <div className="text-center md:text-left">
             <h2 className="text-lg font-semibold">Our Services</h2>
-            <div className="flex justify-center md:justify-start space-x-8 mt-2">
-              <ul className="text-sm space-y-1 list-disc list-inside">
+            <div className="flex justify-center md:justify-start space-x-4 mt-2 text-left">
+              <ul className="text-sm space-y-1 md:list-disc">
                 <li>Akreditasi</li>
                 <li>Pendirian Perguruan Tinggi</li>
                 <li>Penambahan Program Studi Baru</li>
                 <li>Alih Kelola Perguruan Tinggi</li>
               </ul>
-              <ul className="text-sm space-y-1 list-disc list-inside">
+              <ul className="text-sm space-y-1 md:list-disc">
                 <li>SEO Service</li>
                 <li>Hardware & Networking</li>
                 <li>Online Marketing</li>
@@ -37,8 +37,8 @@ function Footer() {
           {/* Follow Us Section */}
           <div className="text-center md:text-left">
             <h2 className="text-lg font-semibold">Follow Us</h2>
-            <div className="flex justify-center md:justify-start space-x-8 mt-2">
-              <ul className="text-bs space-y-1 list-disc list-inside">
+            <div className="flex justify-center md:justify-start space-x-4 mt-2">
+              <ul className="text-sm space-y-1 ">
                 <li>
                   <a
                     href="https://www.facebook.com/people/CV-Konci/100068441943105/"
@@ -70,7 +70,7 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-              <ul className="text-bs space-y-1 list-disc list-inside">
+              <ul className="text-sm space-y-1 ">
                 <li>
                   <a
                     href="https://www.tokopedia.com/rame-tech?source=universe&st=product"
@@ -107,8 +107,8 @@ function Footer() {
         </div>
 
         {/* Copyright Section */}
-        <div className="w-full text-center mt-6">
-          <p className="text-sm">
+        <div className="w-full text-center mt-4">
+          <p className="text-xs">
             © {new Date().getFullYear()} CV. Konci. All rights reserved.
           </p>
         </div>
